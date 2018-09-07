@@ -30,7 +30,7 @@ public class WeightedQuickUnion {
 		if(i == j) {
 			return;
 		}
-		if(i < j) {
+		if(size[i] < size[j]) {
 			id[i] = j;
 			size[j] = size[i]+1;
 			
